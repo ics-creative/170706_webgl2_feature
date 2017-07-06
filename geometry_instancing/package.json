@@ -1,0 +1,37 @@
+{
+  "name": "webgl2-demo-instancing",
+  "version": "0.1.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "gulp": "gulp",
+    "webpack": "webpack",
+    "start": "gulp start",
+    "tsc": "gulp tsCompile",
+    "tslint": "gulp tsLint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dat-gui": "^0.6.2",
+    "browser-sync": "^2.18.8",
+    "gl-matrix": "^2.3.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-tslint": "^7.0.1",
+    "require-dir": "^0.3.1",
+    "ts-loader": "^2.0.2",
+    "tslint": "^4.3.1",
+    "typescript": "^2.2.1",
+    "webpack": "^2.3.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "@types/gl-matrix": "^2.2.34",
+    "@types/stats.js": "^0.16.0",
+    "@types/webgl2": "0.0.1"
+  }
+}
