@@ -14,7 +14,7 @@ const plumber = require("gulp-plumber");
 gulp.task(taskName.tsLint, () => {
   return gulp.src(`${config.tsFolder}**/*.ts`)
     .pipe(plumber({
-      errorHandler: function(err) {
+      errorHandler: function (err) {
         notify.onError(`ts Error:${err}`);
         this.emit("end");
       }

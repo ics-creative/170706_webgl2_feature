@@ -1,7 +1,7 @@
 // ビルド設定ファイル
-const buidConfig = require("./build_config")
+const buidConfig = require("./build_config");
 
-const entry = {}
+const entry = {};
 
 /** webpackの設定ファイルです。 */
 let webpackConfig = {
@@ -18,6 +18,6 @@ let webpackConfig = {
       {test: /\.ts$/, loader: 'ts-loader'}
     ]
   }
-}
+};
 
-module.exports = webpackConfig
+module.exports = webpackConfig;

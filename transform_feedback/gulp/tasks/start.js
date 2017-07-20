@@ -4,14 +4,14 @@
  * @author ICS-Kano
  */
 // 設定ファイル
-const config = require("../../build_config")
-const taskName = require("../taskName")
-const browserSync = require("browser-sync")
+const config = require("../../build_config");
+const taskName = require("../taskName");
+const browserSync = require("browser-sync");
 
-require("./tsCompile")
-require("./tsLint")
+require("./tsCompile");
+require("./tsLint");
 
-const gulp = require("gulp")
+const gulp = require("gulp");
 
 /**
  * ローカルサーバーのタスク設定
@@ -26,7 +26,7 @@ gulp.task(taskName.start,
       startWatchTasks()
     }
   )
-)
+);
 
 /**
  * ウォッチタスクを開始します。
@@ -36,15 +36,15 @@ function startWatchTasks() {
     server: {
       baseDir: "src" // ルートとなるディレクトリを指定
     }
-  })
+  });
 
   // jsファイルを監視
   gulp.watch(`${config.jsFolder}/**/*.js`, (done) => {
     // ファイルに変更があれば同期しているブラウザをリロード
-    browserSync.reload()
+    browserSync.reload();
     // リロード終了時に実行
     done()
-  })
+  });
 
   // TypeScriptファイルのウォッチ
   gulp.watch(`${config.tsFolder}/**/*.ts`,
