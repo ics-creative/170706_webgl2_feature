@@ -310,7 +310,9 @@
 	        }
 	    };
 	    RoundCameraController.prototype._touchEndHandler = function (event) {
-	        event.preventDefault();
+	        if (this.isMouseDown) {
+	            event.preventDefault();
+	        }
 	        this.isMouseDown = false;
 	    };
 	    RoundCameraController.prototype._gestureStartHandler = function (event) {

@@ -203,7 +203,10 @@ export class RoundCameraController
 
   private _touchEndHandler(event:TouchEvent):void
   {
-    event.preventDefault();
+    if (this.isMouseDown)
+    {
+      event.preventDefault();
+    }
     this.isMouseDown = false;
   }
 
