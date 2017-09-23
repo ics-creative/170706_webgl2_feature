@@ -105,8 +105,8 @@ class Main
     this.context.beginTransformFeedback(this.context.POINTS);
     this.context.drawArrays(this.context.POINTS, 0, this.numParticles);
     this.context.endTransformFeedback();
-    this.context.bindTransformFeedback(this.context.TRANSFORM_FEEDBACK, null);
     this.transformFeedbackVertex2.unbindBufferBase();
+    this.context.bindTransformFeedback(this.context.TRANSFORM_FEEDBACK, null);
     // this.context.disable(this.context.RASTERIZER_DISCARD);
     let tmp:TransformFeedbackVertex = this.transformFeedbackVertex2;
     this.transformFeedbackVertex2 = this.transformFeedbackVertex1;
