@@ -1,6 +1,6 @@
 import {GUI, GUIController} from "dat-gui";
 import {mat4, vec3, vec4} from "gl-matrix";
-import * as TWEEN from "tween.js";
+import * as TWEEN from "@tweenjs/tween.js";
 import EventName from "./enum/EventName";
 import {RoundCameraController} from "./myLib/webgl/controller/RoundCameraController";
 import {Camera} from "./myLib/webgl/engine/Camera";

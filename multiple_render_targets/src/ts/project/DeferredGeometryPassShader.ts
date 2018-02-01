@@ -34,7 +34,7 @@ export class DeferredGeometryPassShader extends ShaderObject
     if (value !== this._alpha)
     {
       this._alpha = value;
-      this.uniformList[2].vector4.set(3, value);
+      this.uniformList[2].vector4.set([value], 3);
     }
   }
 

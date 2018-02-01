@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.8",
-    "gl-matrix": "^2.3.2",
+    "gl-matrix": "^2.4.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
@@ -29,8 +29,8 @@
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
-    "@types/gl-matrix": "^2.2.34",
-    "@types/stats.js": "^0.16.0",
-    "@types/webgl2": "0.0.1"
+    "@types/gl-matrix": "^2.4.0",
+    "@types/stats.js": "^0.17.0",
+    "@types/webgl2": "0.0.2"
   }
 }
