@@ -11,7 +11,7 @@ let webpackConfig = {
   },
   devtool: "source-map",
   resolve: {
-    extensions: ["", ".ts"]
+    extensions: ["*", ".js", ".ts"]
   },
   module: {
     loaders: [
